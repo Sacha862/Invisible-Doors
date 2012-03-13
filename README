@@ -1,1 +1,20 @@
-Hello World!
+NOTE: At the moment, these are IDEAS. There is nothing programmed yet.
+
+"Invisible Doors" is a Minecraft BukkitCraft Server Plugin that enables the player to make regular blocks walk-through,
+but only for the people who the creator allows permission (creator automatically included but can be removed)
+
+Possible commands:
+/invdoor tool (gives the "wand")
+/invdoor create (creates the pass-through blocks within the selected area)
+/invdoor delete (removes a door)
+/invdoor add (adds a person to the list of "passers")
+/invdoor remove (removes a person from the list of "passers")
+
+Permission Nodes:
+invdoor.create (allows the creation of doors)
+invdoor.remove (allows the removal of a door owned by the remover)
+invdoor.remove.all (allows the removal of all doors)
+
+Inventor: Sacha862
+Programmers:
+Designers:
