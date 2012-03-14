@@ -1,0 +1,23 @@
+package invisibleDoors;
+
+import java.util.logging.Logger;
+
+import org.bukkit.event.Event;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class InvisibleDoors extends JavaPlugin {
+  public static InvisibleDoors plugin;
+	public final Logger logger = Logger.getLogger("Minecraft");
+	public final MyBlockListener blocklistener = new MyBlockListener(this);
+	
+	public void onDisable() {
+		PluginDescriptionFile pdfFile = this.getDescription();
+		this.logger.info(pdfFile.getName() + " is now shut down.");
+	}
+	
+	public void onEnable() {
+		PluginManager pm = getServer().getPluginManager();
+	}
+}
